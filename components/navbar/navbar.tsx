@@ -4,7 +4,15 @@ import styles from "./Navbar.module.scss";
 
 const NavBar = () => (
   <nav className={styles.navbar}>
-    <Image src="/logo-light.svg" alt="Vercel Logo" width={60} height={60} />
+    <Image
+      className={styles.logo}
+      src="/logo-light.svg"
+      alt="Vercel Logo"
+      width={60}
+      height={60}
+    />
+
+    <i className="bi bi-brightness-high-fill"></i>
   </nav>
 );
 

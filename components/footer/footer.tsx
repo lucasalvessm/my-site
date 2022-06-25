@@ -2,6 +2,14 @@ import Image from "next/image";
 
 import styles from "./Footer.module.scss";
 
+const goTop = () => {
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+};
+
 const Footer = () => (
   <footer className={styles.footer}>
     <ul className={styles.linkList}>
@@ -26,7 +34,7 @@ const Footer = () => (
         </a>
       </li>
     </ul>
-    <div className={styles.button}>
+    <div className={styles.button} onClick={goTop}>
       <i className="bi bi-arrow-up-short"></i>
     </div>
   </footer>

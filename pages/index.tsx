@@ -8,7 +8,7 @@ import styles from "../styles/Home.module.scss";
 
 const Home: NextPage = () => {
   return (
-    <>
+    <div className={styles.home}>
       <Head>
         <title>Lucas Moraes</title>
         <meta name="description" content="My website" />
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 };
 
