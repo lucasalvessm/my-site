@@ -1,3 +1,5 @@
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
 :root {
   --primary-dark: #0b0b2f;
   --primary-medium-dark: #38365d;
@@ -6,14 +8,13 @@
   --secondary: #00c895;
 }
 
+::selection {
+  background: var(--primary-medium-dark);
+}
+
 html,
 body {
-  /* background: radial-gradient(var(--primary-medium-dark), var(--primary-dark)); */
-  background: linear-gradient(
-    var(--primary-dark) 20%,
-    var(--primary-medium-dark),
-    var(--primary-dark)
-  );
+  background: radial-gradient(#0b0b2fb0, var(--primary-dark));
   color: var(--primary-light);
   padding: 0;
   margin: 0;

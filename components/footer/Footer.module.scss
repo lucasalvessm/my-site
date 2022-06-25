@@ -1,15 +1,39 @@
 .footer {
   display: flex;
-  flex: 1;
   padding: 2rem 0;
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 10px 0px 10px;
+
+  i {
+    font-size: 25px;
+  }
+
+  .button {
+    background: var(--primary-light);
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+
+    i {
+      color: var(--primary-dark);
+    }
+  }
 }
 
-.footer a {
+.linkList {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  a {
+    margin: 10px;
+  }
 }

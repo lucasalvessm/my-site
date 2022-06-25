@@ -5,22 +5,30 @@
     "image subtitle";
 }
 
-.image {
+.imageContainer {
   grid-area: image;
   margin: 10px;
+
+  span:nth-of-type(1) {
+    box-shadow: 2px 2px 8px #aaaaaa;
+  }
 }
 
 .title {
   grid-area: title;
   align-self: end;
   margin-bottom: 0px;
+
+  span {
+    font-weight: 400;
+  }
 }
 
 .subtitle {
   align-self: start;
   grid-area: subtitle;
   background-color: var(--secondary);
-  padding: 10px;
-  margin-left: -370px;
-  padding-left: 370px;
+  padding: 12px;
+  margin-left: -360px;
+  padding-left: 360px;
 }
