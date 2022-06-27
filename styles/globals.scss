@@ -1,25 +1,23 @@
-@import "bootstrap-icons/font/bootstrap-icons.css";
+@import 'bootstrap-icons/font/bootstrap-icons.css';
 
 :root {
   --primary-dark: #0b0b2f;
   --primary-medium-dark: #38365d;
   --primary-light: #f1ecff;
-  --light-color: #f1f5f9;
+  --primary-light-200: #e4dcfc;
   --secondary: #00c895;
-}
+  --light-color: #f1f5f9;
 
-::selection {
-  background: var(--primary-medium-dark);
-}
-
-html,
-body {
-  background: radial-gradient(#0b0b2fb0, var(--primary-dark));
-  color: var(--primary-light);
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --gray-000: #f8f9fa;
+  --gray-100: #f1f3f5;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #868e96;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
 }
 
 a {
@@ -33,4 +31,32 @@ a {
 
 i {
   font-size: 25px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+}
+
+.light {
+  transition: all 0.25s linear;
+  background: var(--gray-000);
+  color: var(--primary-dark);
+
+  ::selection {
+    background: var(--primary-light-200);
+  }
+}
+
+.dark {
+  transition: all 0.25s linear;
+  background: var(--primary-dark);
+  color: var(--primary-light);
+
+  ::selection {
+    background: var(--primary-medium-dark);
+  }
 }
