@@ -4,7 +4,6 @@
   }
 
   .card:hover,
-  .card:focus,
   .card:active {
     background: var(--primary-light);
   }
@@ -29,15 +28,12 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   max-width: 300px;
-  transition: all 0.25s linear;
 }
 
 .card:hover,
-.card:focus,
 .card:active {
   background: var(--primary-light);
   color: var(--primary-dark);
-  transition: all 0.25s linear;
 }
 
 .card h2 {

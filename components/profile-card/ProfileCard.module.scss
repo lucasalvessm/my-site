@@ -1,8 +1,8 @@
 .container {
   display: grid;
   grid-template-areas:
-    "image title"
-    "image subtitle";
+    'image title'
+    'image subtitle';
 }
 
 .imageContainer {
@@ -31,4 +31,23 @@
   padding: 12px;
   margin-left: -360px;
   padding-left: 360px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    text-align: center;
+    grid-template-areas:
+      'title'
+      'subtitle'
+      'image ';
+  }
+
+  .subtitle {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+  .imageContainer {
+    margin: 0px;
+  }
 }
